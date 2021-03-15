@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payload_decrypt"
+    android:background="@drawable/bground"
+    >
+
+
+    <TextView
+        android:id="@+id/message_2"
+        android:layout_width="336dp"
+        android:layout_height="100dp"
+        android:autoText="true"
+        android:background="#FFFFFF"
+        android:fontFamily="serif"
+        android:hint="Decrypt the payload to view the message"
+        android:textColor="#050000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.873"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/file_4"
+        android:layout_width="249dp"
+        android:layout_height="46dp"
+        android:autoText="true"
+        android:background="#FFFFFF"
+        android:fontFamily="serif"
+        android:hint="Select a Payloaded Image"
+        android:textColor="#050000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/pass_4"
+        app:layout_constraintEnd_toStartOf="@+id/btn_7"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_7"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#122686"
+        android:text="Browse"
+        app:layout_constraintBottom_toTopOf="@+id/pass_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855" />
+
+    <EditText
+        android:id="@+id/pass_4"
+        style="@android:style/Widget.DeviceDefault.Light.AutoCompleteTextView"
+        android:layout_width="342dp"
+        android:layout_height="45dp"
+        android:background="#E1FFFFFF"
+        android:ems="10"
+        android:hint="Enter a correct Password"
+        android:inputType="textPassword"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/message_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.579"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_8"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="163dp"
+        android:layout_height="100dp"
+        android:background="#108807"
+        android:text="Decrypt Payload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.797" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
